@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aafiyah Digital — Bianca Dominguez</title>
+  <meta name="description" content="Aafiyah Digital: privacy-focused marketing automations, social media API integrations, Stripe/PayPal checkouts, and email automation. Built by Bianca Dominguez." />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind (CDN for static hosting) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Poppins','ui-sans-serif','system-ui'] },
+          colors: {
+            ink: '#000000',
+            snow: '#ffffff',
+            shock: '#FF1493'
+          },
+          boxShadow: {
+            glow: '0 0 0 2px rgba(255,20,147,0.4), 0 10px 25px rgba(0,0,0,0.25)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .pink-underline { box-shadow: inset 0 -0.5em 0 rgba(255,20,147,0.18); }
+  </style>
+</head>
+<body class="bg-ink text-snow font-sans antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-30 backdrop-blur bg-black/70 border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" class="text-snow text-lg font-extrabold tracking-wide">
+        <span class="text-shock">Aafiyah</span> Digital
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#work" class="hover:text-shock">Work</a>
+        <a href="#services" class="hover:text-shock">Services</a>
+        <a href="#stack" class="hover:text-shock">Tech</a>
+        <a href="#about" class="hover:text-shock">About</a>
+        <a href="#contact" class="px-4 py-2 rounded-full bg-shock text-ink font-semibold hover:shadow-glow transition">Let’s talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 opacity-[0.08] pointer-events-none">
+      <div class="w-[120vw] h-[120vw] rounded-full bg-shock blur-3xl absolute -top-1/2 -left-1/3"></div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 pt-16 pb-20 md:pt-24 md:pb-28">
+      <p class="uppercase tracking-[0.2em] text-white/70 text-xs md:text-sm mb-6">Bianca Dominguez • Founder, Aafiyah Digital</p>
+      <h1 class="text-3xl md:text-6xl font-extrabold leading-tight">
+        I build <span class="text-shock">lightweight, AI-powered</span>,<br class="hidden md:block" />
+        <span class="pink-underline">security-first marketing automations</span>
+      </h1>
+      <p class="text-white/80 mt-6 md:text-lg max-w-2xl">
+        I connect your <span class="text-snow">social media APIs</span>, <span class="text-snow">Stripe/PayPal</span>,
+        and <span class="text-snow">email platforms</span> into one private, branded system.
+        You keep your data, save hundreds monthly, and get automation that just works.
+      </p>
+      <div class="flex flex-wrap items-center gap-3 mt-8">
+        <a href="#work" class="px-5 py-3 rounded-full bg-shock text-ink font-semibold hover:shadow-glow transition">View Work</a>
+        <a href="#contact" class="px-5 py-3 rounded-full border border-white/30 hover:border-shock hover:text-shock transition">Start a Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social proof / quick highlights -->
+  <section class="border-y border-white/10">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-white/80">
+      <div><span class="text-shock font-bold">10+ years</span> e-commerce & multi-channel marketing</div>
+      <div><span class="text-shock font-bold">Privacy-first</span> automations, ethical by design</div>
+      <div><span class="text-shock font-bold">Security-aware</span> builds on Supabase & AWS</div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+    <h2 class="text-2xl md:text-4xl font-extrabold mb-6">What I do</h2>
+    <p class="text-white/80 max-w-3xl mb-10">Custom automations that replace 5+ SaaS tools — built around your stack, brand, and privacy needs.</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card -->
+      <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-shock transition">
+        <h3 class="font-bold text-lg mb-2 text-shock">Marketing Automations</h3>
+        <p class="text-white/80 text-sm">Connect checkout, email, and socials directly — no Zapier fees. First-party analytics, opt-in only.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-shock transition">
+        <h3 class="font-bold text-lg mb-2 text-shock">Payment Integrations</h3>
+        <p class="text-white/80 text-sm">Stripe & PayPal for digital downloads, physical products, and services. Webhooks & receipts.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-shock transition">
+        <h3 class="font-bold text-lg mb-2 text-shock">Email & CRM</h3>
+        <p class="text-white/80 text-sm">AWeber, ActiveCampaign, Brevo, MailerLite, ConvertKit — custom API integrations & automations.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-shock transition">
+        <h3 class="font-bold text-lg mb-2 text-shock">Social Media APIs</h3>
+        <p class="text-white/80 text-sm">Facebook/Instagram/TikTok/WhatsApp: smart replies, comment→DM flows, and link tracking.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-shock transition">
+        <h3 class="font-bold text-lg mb-2 text-shock">AI-Driven Funnels</h3>
+        <p class="text-white/80 text-sm">Generate on-brand copy and CTAs. Test offers quickly. Host fast landing/sales pages.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-shock transition">
+        <h3 class="font-bold text-lg mb-2 text-shock">Security & Privacy</h3>
+        <p class="text-white/80 text-sm">Supabase RLS, HTTPS/CSP, webhook signatures, AWS hardening. Ethical, consent-based tracking.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Work -->
+  <section id="work" class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+    <h2 class="text-2xl md:text-4xl font-extrabold mb-6">Featured work</h2>
+    <p class="text-white/80 max-w-3xl mb-10">A few systems I’m building and refining. Each one is modular — I can tailor the same capabilities to your brand.</p>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Project 1 -->
+      <article class="group p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-shock transition">
+        <h3 class="text-xl font-bold mb-2">MuslimBioLink (core engine)</h3>
+        <p class="text-white/80 text-sm mb-3">Privacy-focused link-in-bio & mini-funnel engine with bookings, donations, and email signups.</p>
+        <p class="text-white/60 text-xs">Stack: Next.js • Supabase • Stripe/PayPal • AWeber • Tailwind</p>
+      </article>
+      <!-- Project 2 -->
+      <article class="group p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-shock transition">
+        <h3 class="text-xl font-bold mb-2">Smart Replies + Downloads</h3>
+        <p class="text-white/80 text-sm mb-3">Comment/DM triggers that auto-send booking links or deliver eBooks after payment.</p>
+        <p class="text-white/60 text-xs">Stack: Meta Graph API • Supabase • Stripe Webhooks • SES</p>
+      </article>
+      <!-- Project 3 -->
+      <article class="group p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-shock transition">
+        <h3 class="text-xl font-bold mb-2">First-Party Analytics & Shortener</h3>
+        <p class="text-white/80 text-sm mb-3">Custom short links on your domain with click tracking, UTMs, and pixel events.</p>
+        <p class="text-white/60 text-xs">Stack: Next.js • Supabase • Plausible (optional)</p>
+      </article>
+      <!-- Project 4 -->
+      <article class="group p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-shock transition">
+        <h3 class="text-xl font-bold mb-2">AI Funnel Pages</h3>
+        <p class="text-white/80 text-sm mb-3">Rapid sales-page templates with AI copy suggestions and integrated checkout.</p>
+        <p class="text-white/60 text-xs">Stack: OpenAI • Next.js • Stripe • Tailwind</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="stack" class="border-y border-white/10">
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+      <h2 class="text-2xl md:text-4xl font-extrabold mb-6">Tech & skills</h2>
+      <p class="text-white/80 max-w-3xl mb-10">Full-stack development, automation, and cloud security — focused on practical integrations that move the needle.</p>
+
+      <div class="grid md:grid-cols-3 gap-6 text-sm">
+        <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+          <h3 class="font-bold text-shock mb-2">Core Stack</h3>
+          <ul class="space-y-1 text-white/80">
+            <li>Next.js, Node.js, Tailwind</li>
+            <li>Supabase (Auth/DB/Storage)</li>
+            <li>Vercel or S3/CloudFront</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+          <h3 class="font-bold text-shock mb-2">Integrations</h3>
+          <ul class="space-y-1 text-white/80">
+            <li>Stripe, PayPal checkouts</li>
+            <li>AWeber, ActiveCampaign, Brevo</li>
+            <li>Meta/IG/WhatsApp APIs</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+          <h3 class="font-bold text-shock mb-2">Security & Ops</h3>
+          <ul class="space-y-1 text-white/80">
+            <li>Supabase RLS, HTTPS/CSP</li>
+            <li>Webhook signature verification</li>
+            <li>AWS IAM, CloudFront, WAF (when needed)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+    <h2 class="text-2xl md:text-4xl font-extrabold mb-6">About Aafiyah Digital</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <p class="text-white/80 leading-relaxed">
+        I’m <span class="font-semibold">Bianca Dominguez</span> — a full-stack developer and automation builder who blends
+        technical execution with real-world marketing. After more than a decade in e-commerce and social media, I now help
+        founders and ethical brands grow with privacy-first systems that they truly own.
+      </p>
+      <p class="text-white/80 leading-relaxed">
+        I specialise in connecting social media APIs, payments, and email platforms into one seamless flow, with
+        security best practices from day one. No lock-ins, no bloat — just clean systems that convert.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 opacity-[0.08] pointer-events-none">
+      <div class="w-[100vw] h-[100vw] rounded-full bg-shock blur-3xl absolute -bottom-1/2 -right-1/3"></div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+      <div class="rounded-2xl bg-white/5 border border-white/10 p-8 md:p-12">
+        <h2 class="text-2xl md:text-4xl font-extrabold mb-4">Let’s build your automation</h2>
+        <p class="text-white/80 mb-8 max-w-2xl">
+          Tell me about your product, audience, and tools — I’ll map a secure, privacy-first system that saves you time and money.
+        </p>
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="mailto:hello@aafiyahdigital.com" class="px-5 py-3 rounded-full bg-shock text-ink font-semibold hover:shadow-glow transition">hello@aafiyahdigital.com</a>
+          <a href="https://github.com/awscloudgirl" target="_blank" class="px-5 py-3 rounded-full border border-white/30 hover:border-shock hover:text-shock transition">GitHub</a>
+          <a href="https://linkedin.com/in/awscloudgirl" target="_blank" class="px-5 py-3 rounded-full border border-white/30 hover:border-shock hover:text-shock transition">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-white/60 flex flex-wrap gap-3 items-center justify-between">
+      <span>© <span id="year"></span> Aafiyah Digital — Built by Bianca Dominguez</span>
+      <span>Privacy-first • Ethical • Secure</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
