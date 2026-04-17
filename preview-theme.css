@@ -230,6 +230,11 @@ select {
   gap: 0.85rem;
 }
 
+.footer-link-list--two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem 1.5rem;
+}
+
 .footer-link-list a {
   color: rgba(255, 255, 255, 0.78);
   transition: color 160ms ease;
@@ -324,6 +329,87 @@ select {
     line-height: 1.6;
   }
 
+  .p-6 {
+    padding: 1.25rem;
+  }
+
+  .p-8 {
+    padding: 1.5rem;
+  }
+
+  .py-16 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .py-20 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .pt-20 {
+    padding-top: 3.5rem;
+  }
+
+  .pb-24 {
+    padding-bottom: 4.5rem;
+  }
+
+  .mb-10 {
+    margin-bottom: 2rem;
+  }
+
+  .mb-12 {
+    margin-bottom: 2.25rem;
+  }
+
+  .gap-8 {
+    gap: 1.5rem;
+  }
+
+  .gap-10 {
+    gap: 2rem;
+  }
+
+  .space-y-10 > * + * {
+    margin-top: 2rem;
+  }
+
+  .text-sm {
+    font-size: 0.95rem;
+    line-height: 1.65rem;
+  }
+
+  .text-base {
+    font-size: 1.0625rem;
+    line-height: 1.75rem;
+  }
+
+  .text-lg {
+    font-size: 1.2rem;
+    line-height: 1.85rem;
+  }
+
+  .text-xl {
+    font-size: 1.35rem;
+    line-height: 1.85rem;
+  }
+
+  .text-2xl {
+    font-size: 1.7rem;
+    line-height: 2.15rem;
+  }
+
+  .text-3xl {
+    font-size: 2rem;
+    line-height: 2.35rem;
+  }
+
+  .text-4xl {
+    font-size: 2.45rem;
+    line-height: 1.08;
+  }
+
   .footer-copy {
     font-size: 1rem;
   }
@@ -333,6 +419,10 @@ select {
   .footer-bottom-links {
     font-size: 1rem;
     line-height: 1.65;
+  }
+
+  .footer-link-list--two-col {
+    gap: 0.75rem 1rem;
   }
 
   .footer-heading {
