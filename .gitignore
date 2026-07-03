@@ -3,3 +3,10 @@ LOCAL-SITE-AUDIT-CHECKLIST.md
 LOCAL-BEFORE-PUBLISH-CHECKLIST.md
 LOCAL-MONTHLY-SITE-MAINTENANCE.md
 LOCAL-FULL-SITE-AUDIT.md
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
