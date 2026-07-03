@@ -20,6 +20,20 @@ body {
   font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   background: var(--color-ink);
   color: var(--color-snow);
+  position: relative;
+  isolation: isolate;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(52rem 38rem at 12% -8%, rgba(255, 20, 147, 0.22), transparent 62%),
+    radial-gradient(46rem 34rem at 108% 6%, rgba(255, 20, 147, 0.16), transparent 58%),
+    radial-gradient(40rem 40rem at 50% 115%, rgba(255, 20, 147, 0.14), transparent 60%);
 }
 
 img {
@@ -40,7 +54,7 @@ select {
 }
 
 .pink-underline {
-  box-shadow: inset 0 -0.5em 0 rgba(255, 20, 147, 0.18);
+  box-shadow: inset 0 -0.5em 0 rgba(255, 20, 147, 0.22);
 }
 
 .hero-glow::before,
@@ -48,7 +62,7 @@ select {
   content: "";
   position: absolute;
   border-radius: 9999px;
-  background: rgba(255, 20, 147, 0.18);
+  background: rgba(255, 20, 147, 0.24);
   filter: blur(90px);
   pointer-events: none;
 }
@@ -68,13 +82,16 @@ select {
 }
 
 .section-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.07), rgba(255, 20, 147, 0.05) 70%, rgba(255, 20, 147, 0.08));
+  border: 1px solid rgba(255, 20, 147, 0.22);
   border-radius: 1rem;
+  transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
 }
 
 .section-card:hover {
   border-color: #ff1493;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 20, 147, 0.12);
 }
 
 .icon-inline {
@@ -334,33 +351,37 @@ select {
   }
 
   .p-8 {
-    padding: 1.5rem;
+    padding: 1.375rem;
   }
 
   .py-16 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .py-20 {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
   }
 
   .pt-20 {
-    padding-top: 3.5rem;
+    padding-top: 1.75rem;
   }
 
   .pb-24 {
-    padding-bottom: 4.5rem;
+    padding-bottom: 2.25rem;
   }
 
   .mb-10 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .mb-12 {
-    margin-bottom: 2.25rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .mt-16 {
+    margin-top: 2rem;
   }
 
   .gap-8 {
@@ -368,7 +389,7 @@ select {
   }
 
   .gap-10 {
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .space-y-10 > * + * {
@@ -376,18 +397,23 @@ select {
   }
 
   .text-sm {
+    font-size: 1.1375rem;
+    line-height: 1.85rem;
+  }
+
+  .nav-text {
     font-size: 0.95rem;
     line-height: 1.65rem;
   }
 
   .text-base {
-    font-size: 1.0625rem;
-    line-height: 1.75rem;
+    font-size: 1.25rem;
+    line-height: 1.95rem;
   }
 
   .text-lg {
-    font-size: 1.2rem;
-    line-height: 1.85rem;
+    font-size: 1.3875rem;
+    line-height: 2.05rem;
   }
 
   .text-xl {
@@ -461,7 +487,7 @@ select {
 }
 
 .bg-shock {
-  background: var(--color-shock);
+  background: linear-gradient(135deg, #ff2ea0, var(--color-shock));
 }
 
 .bg-white\/5 {
@@ -578,7 +604,7 @@ select {
 }
 
 .mt-16 {
-  margin-top: 4rem;
+  margin-top: 2.75rem;
 }
 
 .mt-auto {
@@ -614,11 +640,11 @@ select {
 }
 
 .mb-10 {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .mb-12 {
-  margin-bottom: 3rem;
+  margin-bottom: 2.25rem;
 }
 
 .list-disc {
@@ -646,7 +672,7 @@ select {
 }
 
 .p-8 {
-  padding: 2rem;
+  padding: 1.75rem;
 }
 
 .px-4 {
@@ -685,21 +711,21 @@ select {
 }
 
 .py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pt-20 {
-  padding-top: 5rem;
+  padding-top: 2.5rem;
 }
 
 .pb-24 {
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
 }
 
 .text-center {
@@ -712,18 +738,23 @@ select {
 }
 
 .text-sm {
+  font-size: 1.0625rem;
+  line-height: 1.7rem;
+}
+
+.nav-text {
   font-size: 0.875rem;
   line-height: 1.5rem;
 }
 
 .text-base {
-  font-size: 1rem;
-  line-height: 1.6rem;
+  font-size: 1.1875rem;
+  line-height: 1.85rem;
 }
 
 .text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1.3125rem;
+  line-height: 2rem;
 }
 
 .text-xl {
@@ -961,7 +992,7 @@ select {
 }
 
 .gap-10 {
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .space-y-1 > * + * {
@@ -1014,12 +1045,12 @@ select {
   }
 
   .md\:p-10 {
-    padding: 2.5rem;
+    padding: 2rem;
   }
 
   .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.8rem;
+    font-size: 1.3125rem;
+    line-height: 2.05rem;
   }
 
   .md\:text-4xl {
